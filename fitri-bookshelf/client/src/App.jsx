@@ -13,7 +13,7 @@ export default function App() {
   const [minDone, setMinDone] = useState(false);
 
   useEffect(() => {
-    fetch("/api/books")
+    fetch("/books.json")
       .then((r) => r.json())
       .then(setBooks)
       .catch(() => setBooks([]))
